@@ -82,8 +82,9 @@ let signin = () => {
 
     firebase.auth().signInWithEmailAndPassword(email.value, password.value)
         .then(() => {
-            alert("login Successfully")
+            // alert("login Successfully")
             console.log("login Successfully")
+            parent.location="home.html"
         })
         .catch(function (error) {
             // Handle Errors here.
@@ -94,4 +95,50 @@ let signin = () => {
         });
 
 
+}
+
+function facebookLogin(){
+    console.log("facebook")
+    var provider = new firebase.auth.FacebookAuthProvider();
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+        // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+        var token = result.credential.accessToken;
+        // The signed-in user info.
+        var user = result.user;
+        console.log("login facebook")
+        window.location = "home.html";
+        // ...
+      }).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // The email of the user's account used.
+        var email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
+        var credential = error.credential;
+        // ...
+      }); 
+}
+
+function googleLogin(){
+    console.log("google")
+    var provider = new firebase.auth.GoogleAuthProvider();
+
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        var token = result.credential.accessToken;
+        // The signed-in user info.
+        var user = result.user;
+        window.location = "home.html"
+        // ...
+      }).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // The email of the user's account used.
+        var email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
+        var credential = error.credential;
+        // ...
+      });
 }
