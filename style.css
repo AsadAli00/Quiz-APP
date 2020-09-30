@@ -1,0 +1,91 @@
+body{
+    font-family: monospace;
+    font-size: 16px;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    border: 1px solid black;
+    height: 100vh;
+}
+.col{
+    width: 40%;
+    height: 100vh;
+}
+.row{
+    background-image: url(images/background-image.jpg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head > h1 {
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: white;
+}
+.head > p{
+    font-family: monospace;
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+}
+.logo > img {
+    border: 3px solid white;
+    border-radius: 60px;
+    margin-bottom: 5px;
+}
+.Login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+.inner{
+    text-align: center;
+    padding: 10px;
+}
+.inner> label{
+    font-family:sans-serif;
+    font-weight: bold;
+}
+.inner> input{
+    background: none !important;
+    color: white !important;
+    height: 40px;
+    width: 230px;
+     border: none;
+    border-bottom: 2px solid purple;
+}
+.signin{
+    display: flex;
+    justify-content: space-between;
+}
+.signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:purple !important;
+}
+.other-option{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    justify-content: center;
+}
