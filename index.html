@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Images/LOGO.png" type="image/x-icon">
-    <title>QUIZ APP</title>
+    <title>QUIZ APP LOGIN</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
@@ -51,17 +51,19 @@
                             placeholder="Enter Password" width="200px">
                     </div>
                     <div class="signin">
-                        <button type="button" onclick="signin()" class="btn btn-outline-info">Signin</button>
+                        <button type="button" class="btn btn-outline-info" onclick="signin()">SignIn</button>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
                             Sign Up
                         </button>
                     </div>
                     <div class="other-option">
                         <span style="color: grey;">OR</span>
-                        <button type="button" onclick="facebookLogin()" class="btn btn-outline-info m-1">Signin with facebook</button>
-                        <button type="button" onclick="googleLogin()" class="btn btn-outline-info m-1">Signin with Google </button>
+                        <button type="button" onclick="facebookLogin()" class="btn btn-outline-info m-1">Signin with
+                            facebook</button>
+                        <button type="button" onclick="googleLogin()" class="btn btn-outline-info m-1">Signin with
+                            Google </button>
 
-                    </div>
+                        </div>
                     <!-- Modal -->
                     <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
@@ -98,7 +100,8 @@
                                 </div>
 
                                 <div class="modal-footer">
-                                    <button type="button" id="dataDismiss" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" id="dataDismiss" class="btn btn-secondary"
+                                        data-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>

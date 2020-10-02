@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="icon" href="Images/LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyB7XCOLeHIaasVwVeb_EGYZ9xu02SneFQ8",
+            authDomain: "fir-quiz-app-2bfd1.firebaseapp.com",
+            databaseURL: "https://fir-quiz-app-2bfd1.firebaseio.com",
+            projectId: "fir-quiz-app-2bfd1",
+            storageBucket: "fir-quiz-app-2bfd1.appspot.com",
+            messagingSenderId: "1078854014276",
+            appId: "1:1078854014276:web:447fcd1c3cf569d6e03311",
+            measurementId: "G-0XHWD81JP8"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 </head>
+
 <body>
-    <h1>facebook and google page</h1>
+    <div class="wrapper">
+        <!-- Image and text -->
+        <nav class="navbar justify-content-sm-between navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="/Images/LOGO.png" width="30" height="30" class="d-inline-block align-top" alt="logo"
+                    loading="lazy">
+                Quiz App
+            </a>
+
+            <div class="QuizName">
+                <h4>General Knowledge Quiz</h4>
+            </div>
+            <div class="profile">
+                <button type="button" class="btn btn-danger" onclick="logout()">Logout</button>
+
+            </div>
+        </nav>
+
+        <div class="quiz">
+            <div class="header">
+                <div class="total-time">
+                <h4>Total=5min</h4></div>
+                <div class="counter">
+                    <h3>Time</h3> &nbsp;&nbsp;&nbsp;&nbsp;  
+                    <span>min</span>
+                    <h4 id="min">0</h4>&nbsp;
+                    <span>sec</span> 
+                    <h4 id="sec">0</h4>&nbsp;
+                </div>
+            </div>
+
+            <div class="body">
+                <div id="question" class="question">
+                    <!-- <h1>what is your name?</h1>
+                    <ul class="list">
+                        <li class="option">Ali</li>
+                        <li class="option">Ghous</li>
+                        <li class="option">Basit</li>
+                        <li class="option">Ahmed</li>
+                    </ul> -->
+                </div>
+                <div class="button" id="button">
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap-4.5.2-dist\js\bootstrap.min.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
