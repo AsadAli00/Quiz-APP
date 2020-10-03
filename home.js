@@ -154,7 +154,7 @@ function timer() {
         minHeading.innerHTML = min;
         sec = 0
     }
-    else if (min >= 1) {
+    else if (min >= 5) {
         finish();
     }
 

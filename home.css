@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url('images/login-background.jpg');
+    background-image: url('https://nicko.me/images/background.jpg');
     background-repeat: no-repeat;
     background-position-y: center;
     background-size: cover;
@@ -77,7 +77,7 @@ body{
     align-items: center;
     color: white;
     height: auto;
-    background-image: url('images/quiz-background.jpg');
+    background-image: url('https://images.pond5.com/abstract-beautiful-geometric-background-moving-footage-076270083_prevstill.jpeg');
     background-repeat: no-repeat;
     background-position-y: center;
     background-size: cover;
