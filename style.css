@@ -14,7 +14,7 @@ body{
     height: 100vh;
 }
 .row{
-    background-image: url('images/background-image.jpg');
+    background-image: url('https://github.com/AsadAli00/Quiz-APP/blob/master/Images/background-image.jpg?raw=true');
     background-repeat: no-repeat;
     background-position-y: center;
     background-size: cover;
