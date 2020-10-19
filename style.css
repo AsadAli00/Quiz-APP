@@ -14,7 +14,7 @@ body{
     height: 100vh;
 }
 .row{
-    background-image: url('https://github.com/AsadAli00/Quiz-APP/blob/master/Images/background-image.jpg?raw=true');
+    background-image: url('Images/background-image.jpg');
     background-repeat: no-repeat;
     background-position-y: center;
     background-size: cover;
@@ -40,7 +40,7 @@ body{
 .head > p{
     font-family: monospace;
     color: white;
-    padding-top: 5px;
+    padding-top: 3px;
     text-align: center;
 }
 .logo > img {
